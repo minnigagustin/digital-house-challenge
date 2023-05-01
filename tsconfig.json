@@ -3,9 +3,7 @@
   "compilerOptions": {
     "strict": true,
     "types": ["node", "jest"],
-    // Path alias config
     "paths": {
-      // This needs to be mirrored in babel.config.js
       "screens/*": ["./src/screens/*"],
       "components/*": ["./src/components/*"],
       "utils/*": ["./src/utils/*"],

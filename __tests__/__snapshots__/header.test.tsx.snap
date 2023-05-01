@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render correctly 1`] = `
+<View>
+  <Text
+    style={
+      {
+        "fontFamily": "AvenirBold",
+        "fontSize": 34.285714285714285,
+        "fontWeight": "800",
+      }
+    }
+  >
+    Bienvenido de vuelta!
+  </Text>
+  <Text
+    style={
+      {
+        "fontFamily": "AvenirRegular",
+        "fontSize": 30,
+        "lineHeight": 43.15882352941176,
+      }
+    }
+  >
+    Ruben Rodriguez
+  </Text>
+</View>
+`;

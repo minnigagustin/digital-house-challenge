@@ -38,8 +38,8 @@ function Home() {
     getData();
   }, []);
 
-  const calculatePoints = () => {
-    const totalPoints = data.reduce((sum: any, item: any) => {
+  const calculatePoints = (): string => {
+    const totalPoints = data.reduce((sum: number, item: Props) => {
       return item.is_redemption ? sum - item.points : sum + item.points;
     }, 0);
     return totalPoints.toLocaleString();

@@ -2,7 +2,7 @@ import { useNavigation } from "@react-navigation/native";
 import { NativeStackNavigationProp } from "@react-navigation/native-stack";
 import { Image } from "expo-image";
 import React from "react";
-import { Text, View, StyleSheet, Pressable } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity } from "react-native";
 import { formatDate } from "utils/index";
 
 export interface Props {
@@ -32,7 +32,7 @@ export function ItemTransaction({
     });
 
   return (
-    <Pressable onPress={handlePress}>
+    <TouchableOpacity onPress={handlePress}>
       <View style={styles.container}>
         <>
           <Image
@@ -57,7 +57,7 @@ export function ItemTransaction({
           )}
         </>
       </View>
-    </Pressable>
+    </TouchableOpacity>
   );
 }
 

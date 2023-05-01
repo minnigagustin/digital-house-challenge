@@ -44,25 +44,9 @@ function ProductDetails() {
               priority={"high"}
             />
           </View>
-          <Text
-            style={{
-              marginTop: 20,
-              fontFamily: "AvenirBold",
-              color: "#9B9898",
-            }}
-          >
-            Detalles del producto:
-          </Text>
+          <Text style={styles.textLabel}>Detalles del producto:</Text>
           <Text style={styles.detailDate}>Comprado el: {formatDate(date)}</Text>
-          <Text
-            style={{
-              marginTop: 20,
-              fontFamily: "AvenirBold",
-              color: "#9B9898",
-            }}
-          >
-            Con esta compra acumulaste:
-          </Text>
+          <Text style={styles.textLabel}>Con esta compra acumulaste:</Text>
 
           <Text style={styles.detailsPoints}>{points} puntos</Text>
 
@@ -97,7 +81,7 @@ const styles = StyleSheet.create({
   },
   productTitle: {
     fontFamily: "AvenirBold",
-    fontSize: 24,
+    fontSize: scale(24),
     lineHeight: verticalScale(26),
   },
   customHeadContainer: {
@@ -148,6 +132,11 @@ const styles = StyleSheet.create({
     color: "white",
     fontFamily: "AvenirBold",
     fontSize: scale(16),
+  },
+  textLabel: {
+    marginTop: 20,
+    fontFamily: "AvenirBold",
+    color: "#9B9898",
   },
 });
 
